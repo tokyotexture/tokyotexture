@@ -1,15 +1,15 @@
-title:            Site Title
+title:            Tokyo Texture
 description:      Describe your website.
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://localhost:4000
-disqus_shortname: 
+url:              http://www.tokyotexture.com
+disqus_shortname: tokyotexture
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           Rasmus Ekman
   avatar:         bio-photo.jpg
-  bio:            "Describe your self."
-  email:          your@email.com
+  bio:            "A Japanese speaking Swedish techie in Tokyo. The opinions expressed in this blog are my own, and might not reflect those of my employer."
+  email:          rasmus.ekman@gmail.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter:        
   facebook:       
@@ -27,7 +27,7 @@ owner:
   google_plus:
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
+google_analytics: UA-50756143-1
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:        
@@ -39,16 +39,17 @@ links:
     url: /about/
   - title: Posts
     url: /posts/
-  - title: Theme Setup
-    url: /theme-setup/
-  - title: Made Mistakes
-    url: http://mademistakes.com
-    external: true
+  - title: Photos
+    url: /photos/
+
+collections:
+  photos:
+    output: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Asia/Tokyo
 future:      true
-pygments:    true
+highlighter:    true
 markdown:    kramdown
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
