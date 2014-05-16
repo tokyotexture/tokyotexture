@@ -38,7 +38,15 @@ So as long as my content is static, S3 would be a godsend, as it would fix all t
 ![Jekyll Logo]({{ site.url }}/images/2014-05-07/jekyll-logo.png)
 {: .image-pull-right; width: 100px;}
 
+Well, this is where [Jekyll](https://github.com/jekyll/jekyll) comes into play.
+
+>Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website ready to be served by Apache, Nginx or another web server. Jekyll is the engine behind GitHub Pages, which you can use to host sites right from your GitHub repositories.
+
+When it comes to marrying S3 and Jekyll, it seems I'm not the first person to have this brilliant idea. Even Werner Vogels, the CTO of Amazon Web Services, runs his blog, [All things distributed](http://www.allthingsdistributed.com/2011/08/Jekyll-amazon-s3.html) this way. Neat.
+
 ## Setup
+
+Ok, so let's get to the meat and potatoes of this blog post, which is how to get this up and running.
 
 ### Prerequisites
 
