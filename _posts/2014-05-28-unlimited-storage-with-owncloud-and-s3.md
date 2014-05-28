@@ -90,7 +90,7 @@ Now we need to define the permissions for this user by attaching a user policy. 
 
 ![IAM 2]({{ site.url }}/images/2014-05-28/IAM-user-attach-policy-2.png)
 
-![IAM 3]({{ site.url }}/images/2014-05-28/IAM-user-attach-policy-2.png)
+![IAM 3]({{ site.url }}/images/2014-05-28/IAM-user-attach-policy-3.png)
 
 However, as you can see, this would grant permissions for everything S3 related. If you want to be a bit more specific, and only grant permissions to the bucket we just created, change the policy to something like this, where "demo-owncloud" is your bucket name.
 
