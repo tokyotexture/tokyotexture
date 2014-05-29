@@ -96,21 +96,20 @@ However, as you can see, this would grant permissions for everything S3 related.
 
 {% raw %}
 	{
-	 "Version":"2012-10-17",
-	 "Statement": [
-	   {
-	     "Sid": "AllowUserToSeeBucketListInTheConsole",
-	     "Action": ["s3:ListAllMyBuckets", "s3:GetBucketLocation"],
-	     "Effect": "Allow",
-	     "Resource": ["arn:aws:s3:::*"]
-	   },
-	   {
-	     "Sid": "AllowAllS3ActionsInUserFolder",
-	     "Effect": "Allow",
-	     "Action": ["s3:*"],
-	     "Resource": ["arn:aws:s3:::demo-owncloud/*"]
-	   }
-	 ]
+	  "Statement": [
+	    {
+	      "Action": [
+	        "s3:ListAllMyBuckets"
+	      ],
+	      "Effect": "Allow",
+	      "Resource": "arn:aws:s3:::*"
+	    },
+	    {
+	      "Action": "s3:*",
+	      "Effect": "Allow",
+	      "Resource": ["arn:aws:s3:::demo-owncloud","arn:aws:s3:::demo-owncloud/*"]
+	    }
+	  ]
 	}
 {% endraw %}
 
